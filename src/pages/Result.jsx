@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { assets } from '../assets/assets'
 import { Link } from 'react-router-dom'
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
+import { AppContext } from '../context/AppContext'
 
 const Result = () => {
 
@@ -10,9 +11,20 @@ const Result = () => {
     const [isImageLoaded, setIsImageLoaded] = useState(false)
     const [loading, setLoading] = useState(false)
     const [input, setInput] = useState('')
+    const { generateImage } = useContext(AppContext)
 
     const onSubmiteHandler = async (e) => {
+        e.preventDefault()
+        setLoading(true)
 
+        if (input) {
+            const image = await generateImage(input)
+            if (image) {
+                setIsImageLoaded(true)
+                setImage(image)
+            }
+        }
+        setLoading(false)
     }
 
     return (
