@@ -36,4 +36,3 @@
 - 🌐 CORS  
 - 🧠 ClipDrop API
 
-
