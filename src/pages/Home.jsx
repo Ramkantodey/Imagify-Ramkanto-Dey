@@ -5,6 +5,7 @@ import Description from '../components/Description'
 import Testimonial from '../components/Testimonial'
 import GenerateBtn from '../components/GenerateBtn'
 
+
 const Home = () => {
     return (
         <div>
@@ -12,6 +13,7 @@ const Home = () => {
             <Steps />
             <Description />
             <Testimonial />
+
             <GenerateBtn />
         </div>
     )
