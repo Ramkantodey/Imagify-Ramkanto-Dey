@@ -4,6 +4,7 @@ import { assets } from '../assets/assets'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
+import VisitorCounter from './VisitorCounter'
 
 const GenerateBtn = () => {
 
@@ -33,6 +34,9 @@ const GenerateBtn = () => {
                 <img src={assets.star_group} alt=""
                     className='h-6'
                 /></button>
+
+            <VisitorCounter />
+
         </motion.div>
     )
 }

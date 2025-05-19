@@ -10,6 +10,9 @@ const Footer = () => {
                     Copyright © imagify-Ramkanto 2025 All rights reserved.
                 </p>
             </div>
+
+
+
             <div className='flex gap-2.5'>
                 <a href="https://www.facebook.com/ram.apo.2023" target="_blank" rel="noopener noreferrer">
                     <img src={assets.facebook_icon} width={35} alt="Facebook" />
