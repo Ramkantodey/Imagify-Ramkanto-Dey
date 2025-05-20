@@ -12,7 +12,24 @@ const Steps = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
         >
-            <h1 className='text-3xl sm:text-4xl font-semibold mb-2'>How it works</h1>
+
+            <div className="mb-12 w-full max-w-2xl aspect-video">
+                <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-center ">
+                    How to Use This Website
+                </h2>
+
+                <iframe
+                    className="w-full h-full rounded-lg shadow-lg "
+                    src="https://www.youtube.com/embed/eRDOIBfKtM0"
+                    title="🔥 Generate Stunning AI Images in Seconds with Imagify! | Easy AI Image Generator 🌟"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                ></iframe>
+            </div>
+
+            <h1 className='text-3xl sm:text-4xl font-semibold mb-2 mt-10'>How it works</h1>
             <p className='text-lg text-gray-600 mb-8'>Transform Words Into Stunning Images</p>
 
             <div className='space-y-4 w-full max-w-3xl text-sm'>
