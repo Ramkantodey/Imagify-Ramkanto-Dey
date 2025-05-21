@@ -4,6 +4,7 @@ import Steps from '../components/Steps'      // এখানে 'Steps' Capital 
 import Description from '../components/Description'
 import Testimonial from '../components/Testimonial'
 import GenerateBtn from '../components/GenerateBtn'
+import Servercopy from '../components/Servercopy'
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Description />
             <Testimonial />
             <GenerateBtn />
+            <Servercopy />
         </div>
     )
 }
